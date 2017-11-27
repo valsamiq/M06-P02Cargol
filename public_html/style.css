@@ -1,0 +1,11 @@
+.row>div{
+            border-radius: 5px;
+            border:1px solid black;
+            height: 50px;
+        }
+        #showRank{
+            display: inline-block;
+        }
+        .title>div:first-child>div{
+            
+        }
