@@ -12,18 +12,14 @@ ArrayBoost = [];
 var newRace=document.getElementById("newRace");
 var buttonNRace=document.getElementById("buttonNRace");
 
-function Cargols(){
-    this.nom;
-    this.punts;
-    this.vel;
-    this.dist;
-}
-
-var arrayRank = [];
+var arrayRank = document.getElementById("rankCargol");
 //De moment començarem amb aquests:
 
-
-function showCargol(){
-    var show = document.getElementById("showRank");
-    show.innerHTML+=<div>arrayCargol[0][1]</div>;
+for(var i=0;i<rankCargol.length();i++){
+    rankCargol.innerHTML+=
+            <div class="col-md-6 col-sm-6 bg-warning" id="rankCargol">
+          <span>${i+1} </span> 
+          <span class="text-primary">${cargolList[i].name}</span>
+          <span class="text-primary">points:${cargolList[i].points} Velocidad:${cargolList[i].velocitatMaxSprint}</span>
+    </div>`
 }
